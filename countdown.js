@@ -14,7 +14,7 @@ export function showReadyMessage() {
 
     // Show "Pikes Peak Derby" message
     countdownOverlay.style.display = 'flex';
-    countdownText.textContent = 'Pikes Peak Hill Climb';
+    countdownText.textContent = 'Pikes Peak Hill Climb Simulator';
     countdownText.style.color = '#fff';
     countdownText.style.fontSize = '100px';
     countdownText.style.animation = 'countdownPulse 0.8s ease-out';

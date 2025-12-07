@@ -6,7 +6,7 @@ let aiStartedOnce = false; // Track if AI has moved away from start
 
 // Finish line coordinates (same as player's starting position)
 const finishLineX = -50;
-const finishLineZ = -140;
+const finishLineZ = -170;
 const finishTolerance = 10; // Tolerance in units for finish detection
 
 // Check if the player car has crossed the finish line
