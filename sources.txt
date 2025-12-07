@@ -1,0 +1,15 @@
+Rocky Terrain:
+https://sketchfab.com/3d-models/rocky-desert-terrain-0abbd5ee9c404913bc815b7d59a505e3
+
+Race Track:
+https://sketchfab.com/3d-models/lowpoly-racetrack-a2bd81e85612454c8f978f38f1aae0f2
+
+Car 1: 
+https://sketchfab.com/3d-models/2019-volkswagen-id-r-8b6e7ee0ca0e42ce8f6413935d50d137
+
+AI Car: 
+https://sketchfab.com/3d-models/toyota-tacoma-pikes-peak-hillclimb-00327d46729043cb9b06bd0ca6ffb344
+
+AUDIO FILES REQUIRED (not in git):
+- Mario Kart Race Start - Sound Effect (HD) - Gaming Sound FX (youtube).mp3
+- race-car-362035.mp3

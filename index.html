@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikes Peak Hill Climb Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <!-- Full screen black loading overlay -->
+    <div id="loading-overlay">
+        <div id="loading-text">Loading...</div>
+    </div>
+
+    <div id="info" style="display: none;">
+        <h2>Pikes Peak Hill Climb Simulator</h2>
+        <h3> Keyboard Controls:</h3>
+        <div id="keyboard-controls">
+            <p><strong>Spacebar</strong> - Accelerate</p>
+            <p><strong>Left/Right Arrows</strong> - Rotate Car</p>
+        </div>
+        <div id="microbit-controls" style="display: none;">
+            <p><strong>Tilt 'micro:bit'</strong> - steer</p>
+            <p><strong>Auto-driving mode</strong> - Car moves automatically</p>
+        </div>
+        <div id="control-buttons">
+            <button id="connect-microbit" style="margin-top: 10px; padding: 8px 12px; cursor: pointer;">Connect micro:bit</button>
+            <button id="disconnect-microbit" style="margin-top: 10px; padding: 8px 12px; cursor: pointer; display: none;">Disconnect micro:bit</button>
+            <button id="switch-keyboard" style="margin-top: 10px; padding: 8px 12px; cursor: pointer; display: none;">Switch to Keyboard</button>
+            <button id="switch-microbit" style="margin-top: 10px; padding: 8px 12px; cursor: pointer; display: none;">Switch to micro:bit</button>
+        </div>
+    </div>
+
+    <!-- Speedometer overlay -->
+    <div id="speedometer">
+        <div id="speed-value">0</div>
+        <div id="speed-unit">MPH</div>
+    </div>
+    
+    <!-- Race countdown overlay -->
+    <div id="countdown-overlay" style="display: none;">
+        <div id="countdown-text">3</div>
+    </div>
+
+    <!-- Finish overlay -->
+    <div id="finish-overlay" style="display: none;">
+        <div id="finish-text">FINISH!</div>
+    </div>
+    
+    <!-- Race music (plays on spacebar press for countdown) -->
+    <audio id="race-music">
+        <source src="mariokart.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Background music (plays after intro) -->
+    <audio id="background-music" loop>
+        <source src="racecar.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Finish music -->
+    <audio id="finish-music">
+        <source src="finish.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Instrumental background music (plays on page load) -->
+    <audio id="instrumental-music" loop>
+        <source src="instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
